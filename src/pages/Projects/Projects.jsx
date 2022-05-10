@@ -1,5 +1,6 @@
-import styles from "./Projects.module.scss";
-import { GradientBtn, ProjectCard } from "components/index";
+import React from 'react';
+import { GradientBtn, ProjectCard } from 'components/index';
+import styles from './Projects.module.scss';
 
 export default function Projects() {
   return (
@@ -15,7 +16,7 @@ export default function Projects() {
               <div className={styles.projects_inputBox_name}>
                 <div className={styles.projects_inputBox_name_text}>Name</div>
                 <input
-                  placeholder="Enter your name"
+                  placeholder='Enter your name'
                   className={styles.projects_inputBox_name_input}
                 ></input>
               </div>
@@ -23,7 +24,7 @@ export default function Projects() {
               <div className={styles.projects_inputBox_type}>
                 <div className={styles.projects_inputBox_type_text}>Type</div>
                 <input
-                  placeholder="Select type"
+                  placeholder='Select type'
                   className={styles.projects_inputBox_type_input}
                 ></input>
               </div>
@@ -33,13 +34,13 @@ export default function Projects() {
                   Category
                 </div>
                 <input
-                  placeholder="Select type"
+                  placeholder='Select type'
                   className={styles.projects_inputBox_category_input}
                 ></input>
               </div>
               {/* BUTTON */}
               <div className={styles.projects_btn_wrap}>
-                <GradientBtn text="Search" />
+                <GradientBtn text='Search' />
               </div>
             </div>
           </div>

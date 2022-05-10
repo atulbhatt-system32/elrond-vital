@@ -1,6 +1,6 @@
-import React from "react";
-import GradientBtn from "../../Buttons/GradientButton/GradientBtn";
-import styles from "./Ocassion_boxes.module.scss";
+import React from 'react';
+import GradientBtn from '../../Buttons/GradientButton/GradientBtn';
+import styles from './Ocassion_boxes.module.scss';
 export default function Ocassion_boxes(props) {
   return (
     <div sel={props.title} className={styles.Ocassion_box}>
@@ -11,7 +11,7 @@ export default function Ocassion_boxes(props) {
         family or entourage to participate in the simplest way
       </p>
       <div className={styles.Ocassion_box_btn}>
-        <GradientBtn text="See all personal projects" />
+        <GradientBtn text='See all personal projects' />
       </div>
     </div>
   );

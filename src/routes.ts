@@ -1,4 +1,6 @@
 import { dAppName } from 'config';
+import ProjectDetails from 'pages/ProjectDetails/ProjectDetails';
+import Projects from 'pages/Projects/Projects';
 import withPageTitle from './components/PageTitle';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
@@ -41,11 +43,13 @@ const routes: Array<any> = [
   },
   {
     path: routeNames.projects,
-    title: 'Projects'
+    title: 'Projects',
+    component: Projects
   },
   {
     path: routeNames.projectdetail,
-    title: 'Project Detail'
+    title: 'Project Detail',
+    component: ProjectDetails
   }
 ];
 

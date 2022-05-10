@@ -1,11 +1,12 @@
-import GradientBtn from "../../Buttons/GradientButton/GradientBtn";
-import styles from "./AdvanceCard.module.scss";
+import React from 'react';
+import GradientBtn from '../../Buttons/GradientButton/GradientBtn';
+import styles from './AdvanceCard.module.scss';
 export default function AdvanceCard(props) {
   let chosen;
   if (props.id === 1) {
-    chosen = "View all personal projects";
+    chosen = 'View all personal projects';
   } else {
-    chosen = "See all charities";
+    chosen = 'See all charities';
   }
   return (
     <>
@@ -18,7 +19,7 @@ export default function AdvanceCard(props) {
             {props.description_first}
           </p>
           <p className={styles.advance_card_description_second}>
-            {" "}
+            {' '}
             {props.description_second}
           </p>
 

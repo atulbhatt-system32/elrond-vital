@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./ProjectDetails.module.scss";
+import React from 'react';
 import {
   worker,
   location,
@@ -7,14 +6,15 @@ import {
   person,
   money,
   share,
-  donation,
-} from "../../assets/img/index";
-import { GradientBtn } from "../../components/index";
+  donation
+} from '../../assets/img/index';
+import { GradientBtn } from '../../components/index';
+import styles from './ProjectDetails.module.scss';
 export default function ProjectDetails() {
   return (
     <div className={styles.projectDetails}>
       <section className={styles.img_wrap}>
-        <img src={worker} alt="worker" />
+        <img src={worker} alt='worker' />
       </section>
       <div className={styles.project_details_card}>
         <section className={styles.participate}>
@@ -29,21 +29,21 @@ export default function ProjectDetails() {
                 <div className={styles.category_box}>
                   <span className={styles.left}>Likes</span>
                   <div className={styles.right}>
-                    <img src={heart} alt="heart" />
+                    <img src={heart} alt='heart' />
                     <span>30</span>
                   </div>
                 </div>
                 <div className={styles.category_box}>
                   <span className={styles.left}>Participants</span>
                   <div className={styles.right}>
-                    <img src={person} alt="person" />
+                    <img src={person} alt='person' />
                     <span>30</span>
                   </div>
                 </div>
                 <div className={styles.category_box}>
                   <span className={styles.left}>Amount raised</span>
                   <div className={styles.right}>
-                    <img src={money} alt="money" />
+                    <img src={money} alt='money' />
                     <span>$70,000</span>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ export default function ProjectDetails() {
               {/* ************************************* */}
             </div>
             <div className={styles.btn}>
-              <GradientBtn text="Participate" />
+              <GradientBtn text='Participate' />
             </div>
           </div>
         </section>
@@ -60,14 +60,14 @@ export default function ProjectDetails() {
           <div className={styles.target_desktop}>
             <span>Target amount</span>
             <div className={styles.money}>
-              <img src={money} alt="money" />
+              <img src={money} alt='money' />
               <span>$70,000 / $1,00,000</span>
             </div>
           </div>
           <div className={styles.copy_wrapper}>
             <input className={styles.inputMobile}></input>
             <input
-              placeholder="https://vital-dapp.com/mymoneypot"
+              placeholder='https://vital-dapp.com/mymoneypot'
               className={styles.inputDesktop}
             ></input>
 
@@ -75,7 +75,7 @@ export default function ProjectDetails() {
               <button className={styles.copy_btn}>Copy</button>
               <div className={styles.share}>
                 <span>Share</span>
-                <img src={share} alt="share" />
+                <img src={share} alt='share' />
               </div>
             </div>
           </div>
@@ -85,25 +85,25 @@ export default function ProjectDetails() {
           <span className={styles.main_head}>What is Lorem Ipsum?</span>
           <p className={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&poss standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen{" "}
+            and scrambled it to make a type specimen{' '}
           </p>
-          <img src={worker} alt="worker" />
+          <img src={worker} alt='worker' />
           <p className={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&poss standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.{" "}
+            PageMaker including versions of Lorem Ipsum.{' '}
           </p>
           <p className={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&poss standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,
@@ -114,11 +114,11 @@ export default function ProjectDetails() {
           <span className={styles.secondary_head}>What is Lorem Ipsum?</span>
           <p className={styles.text}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&poss standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-          <img src={donation} alt="donation" />
+          <img src={donation} alt='donation' />
         </section>
 
         <section className={styles.organizer_wrapper}>
@@ -128,8 +128,8 @@ export default function ProjectDetails() {
           <div className={styles.organizer_profile}>
             <div className={styles.organizer_profile_img}>
               <img
-                src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
-                alt="john"
+                src='https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg'
+                alt='john'
               />
             </div>
             <div className={styles.organizer_profile_name}>
@@ -140,7 +140,7 @@ export default function ProjectDetails() {
           </div>
           <div className={styles.organizer_address}>
             <div className={styles.organizer_address_icon}>
-              <img src={location} alt="location" />
+              <img src={location} alt='location' />
             </div>
             <div className={styles.organizer_address_wrap}>
               <span className={styles.organizer_address_text}>

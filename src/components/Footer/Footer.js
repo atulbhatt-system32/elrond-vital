@@ -1,11 +1,11 @@
-import React from "react";
-import vitalLogo from "../../assets/img/logo.svg";
-import Footer_img from "../../assets/img/footer-img.svg";
-import Facebook from "../../assets/img/facebook.svg";
-import Instagram from "../../assets/img/instagram.svg";
-import Twitter from "../../assets/img/twitter.svg";
-import styles from "./Footer.module.scss";
-import GradientBtn from "../Buttons/GradientButton/GradientBtn";
+import React from 'react';
+import Facebook from '../../assets/img/facebook.svg';
+import Footer_img from '../../assets/img/footer-img.svg';
+import Instagram from '../../assets/img/instagram.svg';
+import vitalLogo from '../../assets/img/logo.svg';
+import Twitter from '../../assets/img/twitter.svg';
+import GradientBtn from '../Buttons/GradientButton/GradientBtn';
+import styles from './Footer.module.scss';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               className={styles.footer_logo_img}
               src={vitalLogo}
-              alt="footer-logo"
+              alt='footer-logo'
             />
             <span className={styles.footer_logo_text}>vital</span>
           </div>
@@ -27,11 +27,11 @@ export default function Footer() {
             Stake your NFTs to earn VITAL
           </p>
           <div className={styles.footer_btn_wrap}>
-            <GradientBtn text="Connect" />
+            <GradientBtn text='Connect' />
           </div>
         </div>
         <div className={styles.footer_img}>
-          <img src={Footer_img} alt="footer-img" />
+          <img src={Footer_img} alt='footer-img' />
         </div>
       </div>
 
@@ -39,9 +39,9 @@ export default function Footer() {
         <div className={styles.footer_bottom_wrap}>
           <div className={styles.footer_social}>
             <span className={styles.footer_social_text}>Social Connect</span>
-            <img src={Facebook} alt="facebook" />
-            <img src={Twitter} alt="twitter" />
-            <img src={Instagram} alt="instagram" />
+            <img src={Facebook} alt='facebook' />
+            <img src={Twitter} alt='twitter' />
+            <img src={Instagram} alt='instagram' />
           </div>
           <div className={styles.footer_copyright}>
             <p className={styles.footer_copyright_text}>

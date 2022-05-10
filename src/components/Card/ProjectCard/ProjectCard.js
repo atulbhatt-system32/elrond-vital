@@ -1,5 +1,6 @@
-import styles from "./ProjectCard.module.scss";
-import { cake, heart, person, money } from "../../../assets/img";
+import React from 'react';
+import { cake, heart, person, money } from '../../../assets/img';
+import styles from './ProjectCard.module.scss';
 
 export default function ProjectCard() {
   return (
@@ -8,7 +9,7 @@ export default function ProjectCard() {
       {/* CAROUSEL WRAP */}
       <div className={styles.projectCard_wrap}>
         {/* CAROUSEL IMAGE */}
-        <img className={styles.projectCard_img} src={cake} alt="cake" />
+        <img className={styles.projectCard_img} src={cake} alt='cake' />
         {/* CAROUSEL CONTENT WRAP */}
         <div className={styles.projectCard_body_wrap}>
           <div className={styles.projectCard_text_additional}>
@@ -27,17 +28,17 @@ export default function ProjectCard() {
             <div className={styles.projectCard_additional}>
               {/* HEART */}
               <div className={styles.projectCard_additional_heart}>
-                <img src={heart} alt="heart" />
+                <img src={heart} alt='heart' />
                 <span>30</span>
               </div>
               {/* PERSON */}
               <div className={styles.projectCard_additional_person}>
-                <img src={person} alt="person" />
+                <img src={person} alt='person' />
                 <span>30</span>
               </div>
               {/* MONEY */}
               <div className={styles.projectCard_additional_money}>
-                <img src={money} alt="money" />
+                <img src={money} alt='money' />
                 <span>$1,00,000</span>
               </div>
             </div>

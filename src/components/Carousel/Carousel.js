@@ -1,12 +1,12 @@
-import React from "react";
-import Cake from "../../assets/img/cake.svg";
-import styles from "./Carousel.module.scss";
+import React from 'react';
+import Cake from '../../assets/img/cake.svg';
+import styles from './Carousel.module.scss';
 
 export default function Carousel(props) {
   return (
     <div className={styles.carousel}>
       <div className={styles.carousel_wrapper}>
-        <img className={styles.carousel_img} src={Cake} alt="cake" />
+        <img className={styles.carousel_img} src={Cake} alt='cake' />
         <div className={styles.carousel_body_wrapper}>
           <div className={styles.carousel_textWrap}>
             <span className={styles.carousel_title}>{props.title}</span>

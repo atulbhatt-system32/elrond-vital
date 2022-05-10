@@ -1,16 +1,16 @@
-import React from "react";
-import GradientBtn from "../Buttons/GradientButton/GradientBtn";
-import styles from "./Ocassion.module.scss";
-import Gift from "../../assets/img/gift.svg";
-import OcassionBoxes from "./Ocassion_boxes/Ocassion_boxes";
-import BirthdayWedding from "../../assets/img/birthday_wedding.svg";
+import React from 'react';
+import BirthdayWedding from '../../assets/img/birthday_wedding.svg';
+import Gift from '../../assets/img/gift.svg';
+import GradientBtn from '../Buttons/GradientButton/GradientBtn';
+import styles from './Ocassion.module.scss';
+import OcassionBoxes from './Ocassion_boxes/Ocassion_boxes';
 
 export default function Ocassion() {
   return (
     <div>
       <div className={styles.ocassion_mobile}>
         <div className={styles.ocassion_mobile_img_wrap}>
-          <img src={Gift} alt="gift" />
+          <img src={Gift} alt='gift' />
         </div>
         <div className={styles.ocassion_mobile_content_wrap}>
           <span className={styles.ocassion_mobile_title}>Birthday</span>
@@ -24,25 +24,25 @@ export default function Ocassion() {
           </p>
         </div>
         <div className={styles.ocassion_mobile_btn}>
-          <GradientBtn text="See all personal projects" />
+          <GradientBtn text='See all personal projects' />
         </div>
       </div>
       {/* Separate */}
       <div className={styles.ocassion_desktop}>
         <div className={styles.ocassion_desktop_top}>
-          <OcassionBoxes title="Wedding" />
-          <OcassionBoxes title="Community" />
-          <OcassionBoxes title="Health" />
-          <OcassionBoxes title="Other common expenses" />
+          <OcassionBoxes title='Wedding' />
+          <OcassionBoxes title='Community' />
+          <OcassionBoxes title='Health' />
+          <OcassionBoxes title='Other common expenses' />
         </div>
         <div className={styles.ocassion_desktop_center}>
-          <img src={BirthdayWedding} alt="BirthdayWedding" />
+          <img src={BirthdayWedding} alt='BirthdayWedding' />
         </div>
         <div className={styles.ocassion_desktop_bottom}>
-          <OcassionBoxes title="Birthday" />
-          <OcassionBoxes title="Baby shower" />
-          <OcassionBoxes title="Animals" />
-          <OcassionBoxes title="Weekend getaway" />
+          <OcassionBoxes title='Birthday' />
+          <OcassionBoxes title='Baby shower' />
+          <OcassionBoxes title='Animals' />
+          <OcassionBoxes title='Weekend getaway' />
         </div>
       </div>
     </div>
