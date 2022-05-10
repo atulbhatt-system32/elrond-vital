@@ -2,6 +2,7 @@ import { dAppName } from 'config';
 import withPageTitle from './components/PageTitle';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import LandingPage from './pages/LandingPage';
 import Transaction from './pages/Transaction';
 
 export const routeNames = {
@@ -35,7 +36,8 @@ const routes: Array<any> = [
   },
   {
     path: routeNames.landingpage,
-    title: 'Landing Page'
+    title: 'Landing Page',
+    component: LandingPage
   },
   {
     path: routeNames.projects,

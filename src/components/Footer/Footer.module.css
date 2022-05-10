@@ -1,26 +1,44 @@
 .footer {
   background-color: #f2f2f2;
 }
+
 .footer_content_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 40px 40px 30px 40px;
 }
+
 .footer_content_wrap img {
   max-width: 100%;
 }
+
 .footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   padding-bottom: 27px;
 }
+
 .footer_logo_img {
   width: 71px;
   height: 71px;
 }
+
 .footer_logo_text {
   font-weight: 500;
   font-size: 36px;
@@ -28,51 +46,73 @@
   color: #2f455c;
   padding-left: 10px;
 }
+
 .footer_head {
   color: #2f455c;
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
 }
+
 .footer_description_one {
   color: #2f455c;
   font-weight: 400;
   line-height: 18.78px;
   margin-bottom: 0;
 }
+
 .footer_description_two {
   color: #2f455c;
   font-weight: 400;
   line-height: 18.78px;
 }
+
 .footer_btn_wrap {
   width: 55%;
 }
+
 .footer_btn_wrap button {
   font-size: 14px;
   font-weight: 400;
   line-height: 18.62px;
   font-family: "Segoe UI";
 }
+
 .footer_bottom_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
   font-weight: 400;
   padding: 15.5px 50px 25px 50px;
   border-bottom: 2px solid #ececec;
 }
+
 .footer_social_text {
   font-size: 18px;
   line-height: 21.13px;
   color: #adadad;
 }
+
 .footer_copyright_text {
   font-size: 18px;
   font-weight: 400;
@@ -80,11 +120,12 @@
   color: #adadad;
   font-style: normal;
 }
+
 .footer_copyright_year {
   padding-right: 5px;
 }
 
-[alt=footer-img] {
+[alt="footer-img"] {
   width: 100%;
   height: 100%;
 }
@@ -118,15 +159,28 @@
   }
   .footer_bottom_wrap {
     padding: 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #fff;
   }
   .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 25px;
     font-weight: 400;
     padding: 15.5px 0 25px 0;
@@ -148,10 +202,12 @@
     padding-right: 5px;
   }
 }
-[alt=facebook] {
+
+[alt="facebook"] {
   margin-right: 25px;
 }
 
-[alt=twitter] {
+[alt="twitter"] {
   margin-right: 25px;
-}/*# sourceMappingURL=Footer.module.css.map */
+}
+/*# sourceMappingURL=Footer.module.css.map */

@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './GradientBtn.module.scss';
 const GradientBtn = (props) => {
   return (
