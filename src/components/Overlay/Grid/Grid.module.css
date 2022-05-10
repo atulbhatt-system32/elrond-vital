@@ -1,1 +1,17 @@
-/*# sourceMappingURL=Grid.module.css.map */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.grid .grid_head {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justified;
+  color: #454545;
+  padding-left: 1rem;
+}
+.grid .grid_body {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=Grid.module.css.map */

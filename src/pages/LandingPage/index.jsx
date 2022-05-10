@@ -23,7 +23,8 @@ import {
   Carousel,
   GradientBtn,
   Ocassion,
-  OcassionDesktop
+  OcassionDesktop,
+  Overlay
 } from '../../components';
 import styles from './LandingPage.module.scss';
 
@@ -402,6 +403,7 @@ const LandingPage = () => {
           <OcassionDesktop />
         </section>
       </main>
+      <Overlay />
     </div>
   );
 };

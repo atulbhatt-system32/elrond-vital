@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./OverlayCard.module.scss";
-import { grayBox } from "assets/img";
-export default function OverlayCard() {
+import React from 'react';
+import { grayBox } from '../../../assets/img/index.js';
+import styles from './OverlayCard';
+export default function OverlayCard(props) {
   return (
     <div className={styles.overlay_card}>
       <div className={styles.overlay_img_wrap}>
-        <img src={grayBox} alt="gray-box" />
+        <img src={grayBox} alt='gray-box' />
       </div>
       <div className={styles.overlay_title}>
-        <span>Wedding</span>
+        <span>{props.title}</span>
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ import step_2_base from './step_2_base.svg';
 import step_3_base from './step_3_base.svg';
 import step_4_base from './step_4_base.svg';
 import worker from './worker.svg';
+import grayBox from './grayBox.svg';
 
 export {
   logo,
@@ -53,5 +54,6 @@ export {
   donation,
   john,
   location,
-  share
+  share,
+  grayBox
 };

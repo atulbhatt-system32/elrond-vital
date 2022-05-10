@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 import Ocassion from './Ocassion/Ocassion';
 import Ocassion_boxes from './Ocassion/Ocassion_boxes/Ocassion_boxes';
 import OcassionDesktop from './Ocassion/OcassionDesktop';
+import Overlay from './Overlay/Overlay';
 // import AdvanceCarousel from "./ProjectCard/AdvanceCarousel";
 //Buttons
 
@@ -22,5 +23,6 @@ export {
   Ocassion,
   Ocassion_boxes,
   OcassionDesktop,
+  Overlay,
   ProjectCard
 };

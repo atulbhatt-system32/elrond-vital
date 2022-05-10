@@ -1,1 +1,46 @@
-/*# sourceMappingURL=Overlay.module.css.map */
+.overlay {
+  background-color: red;
+  min-height: 100vh;
+  z-index: 999;
+  border-radius: 20px;
+}
+.overlay_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.overlay .overlay_head {
+  width: 100%;
+  height: 100%;
+}
+.overlay .overlay_head span {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 30px;
+  color: #454545;
+  text-align: justify;
+}
+.overlay .overlay_body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+}
+.overlay .body_bar {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 100px;
+  background-color: #fff;
+}
+.overlay .body_bar ::before {
+  content: "";
+  background-color: cyan;
+  width: 50%;
+}
+.overlay .body_grid {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}/*# sourceMappingURL=Overlay.module.css.map */
