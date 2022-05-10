@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  filter: drop-shadow(0px 15px 20px rgba(75, 75, 75, 0.302));
+  background: rgb(255, 255, 255);
+  padding: 2.5rem 1rem;
+  width: 100%;
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+}/*# sourceMappingURL=BasicCard.module.css.map */

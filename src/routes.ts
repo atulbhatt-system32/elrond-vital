@@ -10,7 +10,10 @@ export const routeNames = {
   transaction: '/transaction',
   unlock: '/unlock',
   ledger: '/ledger',
-  walletconnect: '/walletconnect'
+  walletconnect: '/walletconnect',
+  landingpage: '/landingpage',
+  projects: '/projects',
+  projectdetail: '/projectdetail'
 };
 
 const routes: Array<any> = [
@@ -29,6 +32,18 @@ const routes: Array<any> = [
     path: routeNames.transaction,
     title: 'Transaction',
     component: Transaction
+  },
+  {
+    path: routeNames.landingpage,
+    title: 'Landing Page'
+  },
+  {
+    path: routeNames.projects,
+    title: 'Projects'
+  },
+  {
+    path: routeNames.projectdetail,
+    title: 'Project Detail'
   }
 ];
 
