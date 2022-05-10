@@ -1,15 +1,19 @@
 .overlay {
-  background-color: red;
-  min-height: 100vh;
+  border: 1px solid black;
+  // background-color: red;
+  margin: auto;
+  height: 100%;
+  width: 70%;
   z-index: 999;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.5rem;
 
   &_wrap {
+    // background-color: green;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 2rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
     height: 100%;
     width: 100%;
   }
@@ -18,8 +22,8 @@
     height: 100%;
     span {
       font-weight: 500;
-      font-size: 40px;
-      line-height: 22px;
+      font-size: 28px;
+      line-height: 14px;
       color: #454545;
       text-align: justify;
     }
@@ -31,19 +35,24 @@
   }
   .body_bar {
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.8rem 0;
     border-radius: 100px;
     background-color: #fff;
+    position: relative;
     ::before {
       content: '';
-      background-color: cyan;
       width: 50%;
+      padding: 0.8rem 0;
+      border-radius: 100px;
+      background-color: blue;
+      position: absolute;
+      // z-index: 45;
     }
   }
   .body_grid {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    // background-color: yellow;
     gap: 20px;
   }
   .btn_wrap {
@@ -51,6 +60,7 @@
     justify-content: flex-end;
     button {
       width: 12%;
+      padding: 0.4rem 1rem;
     }
   }
   .close_btn {
