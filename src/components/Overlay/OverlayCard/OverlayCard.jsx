@@ -1,6 +1,6 @@
 import React from 'react';
 import { grayBox } from '../../../assets/img/index.js';
-import styles from './OverlayCard';
+import styles from './OverlayCard.module.scss';
 export default function OverlayCard(props) {
   return (
     <div className={styles.overlay_card}>

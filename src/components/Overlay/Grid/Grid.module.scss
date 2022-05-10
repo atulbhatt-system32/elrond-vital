@@ -3,15 +3,14 @@
   flex-direction: column;
   gap: 40px;
   .grid_head {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 18px;
     text-align: justified;
     color: #454545;
-    padding-left: 1rem;
   }
   .grid_body {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }

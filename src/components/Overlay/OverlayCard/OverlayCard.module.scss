@@ -1,13 +1,23 @@
 .overlay_card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .overlay_title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: center;
-  color: #454545;
+  span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #454545;
+  }
+}
+.overlay_img_wrap {
+  display: grid;
+  place-items: center;
+  img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+  }
 }
