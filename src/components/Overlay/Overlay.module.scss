@@ -2,8 +2,8 @@
   border: 1px solid black;
   // background-color: red;
   margin: auto;
-  height: 100%;
-  width: 70%;
+  height: 95%;
+  width: 50%;
   z-index: 999;
   border-radius: 20px;
   padding: 1.5rem;
@@ -34,19 +34,24 @@
     gap: 30px;
   }
   .body_bar {
-    width: 100%;
-    padding: 0.8rem 0;
+    border: 2px solid cyan;
     border-radius: 100px;
+    padding: 8px 0;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    ::before {
+    &::before {
       content: '';
-      width: 50%;
-      padding: 0.8rem 0;
+      background-color: red;
+      background: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
       border-radius: 100px;
-      background-color: blue;
+      padding: 8px 25px;
       position: absolute;
-      // z-index: 45;
+      width: 30%;
+      left: 0;
+      height: 100%;
     }
   }
   .body_grid {

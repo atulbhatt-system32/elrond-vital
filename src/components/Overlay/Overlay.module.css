@@ -1,8 +1,8 @@
 .overlay {
   border: 1px solid black;
   margin: auto;
-  height: 100%;
-  width: 70%;
+  height: 95%;
+  width: 50%;
   z-index: 999;
   border-radius: 20px;
   padding: 1.5rem;
@@ -32,19 +32,25 @@
   gap: 30px;
 }
 .overlay .body_bar {
-  width: 100%;
-  padding: 0.8rem 0;
+  border: 2px solid cyan;
   border-radius: 100px;
+  padding: 8px 0;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
 }
-.overlay .body_bar ::before {
+.overlay .body_bar::before {
   content: "";
-  width: 50%;
-  padding: 0.8rem 0;
+  background-color: red;
+  background: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
   border-radius: 100px;
-  background-color: blue;
+  padding: 8px 25px;
   position: absolute;
+  width: 30%;
+  left: 0;
+  height: 100%;
 }
 .overlay .body_grid {
   display: flex;
