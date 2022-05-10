@@ -10,6 +10,9 @@ export default function Overlay() {
   });
   return (
     <div className={styles.overlay}>
+      <div className={styles.close_btn}>
+        <button>X</button>
+      </div>
       <div className={styles.overlay_wrap}>
         <div className={styles.overlay_head}>
           <span>I choose my category</span>
@@ -18,6 +21,8 @@ export default function Overlay() {
           <div className={styles.body_bar}></div>
           <div className={styles.body_grid}>{data}</div>
         </div>
+      </div>
+      <div className={styles.btn_wrap}>
         <GradientBtn text='Next' />
       </div>
     </div>

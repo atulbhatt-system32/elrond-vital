@@ -3,6 +3,7 @@
   min-height: 100vh;
   z-index: 999;
   border-radius: 20px;
+  padding: 2rem;
 }
 .overlay_wrap {
   display: flex;
@@ -26,7 +27,7 @@
 .overlay .overlay_body {
   display: flex;
   flex-direction: column;
-  padding: 0.8rem 1rem;
+  gap: 30px;
 }
 .overlay .body_bar {
   width: 100%;
@@ -43,4 +44,16 @@
   display: flex;
   flex-direction: column;
   background-color: yellow;
+  gap: 20px;
+}
+.overlay .btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.overlay .btn_wrap button {
+  width: 12%;
+}
+.overlay .close_btn {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=Overlay.module.css.map */
