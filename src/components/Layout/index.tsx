@@ -28,7 +28,7 @@ function Layout({ children }: { children: React.ReactNode }) {
                   href='/'
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.hash = '/';
+                    window.location.href = '/';
                   }}
                 >
                   Home
@@ -38,7 +38,7 @@ function Layout({ children }: { children: React.ReactNode }) {
                   href='/projects'
                   onClick={(e) => {
                     e.preventDefault();
-                    window.location.hash = '/projects';
+                    window.location.href = '/projects';
                   }}
                 >
                   Projects

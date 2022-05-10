@@ -3,7 +3,6 @@ import ProjectDetails from 'pages/ProjectDetails/ProjectDetails';
 import Projects from 'pages/Projects/Projects';
 import withPageTitle from './components/PageTitle';
 import Dashboard from './pages/Dashboard';
-import Home from './pages/Home';
 import LandingPage from './pages/LandingPage';
 import Transaction from './pages/Transaction';
 
@@ -23,7 +22,7 @@ const routes: Array<any> = [
   {
     path: routeNames.home,
     title: 'Home',
-    component: Home
+    component: LandingPage
   },
   {
     path: routeNames.dashboard,

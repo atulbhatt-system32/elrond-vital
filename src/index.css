@@ -26,6 +26,10 @@ a {
   color: #141414;
 }
 
+a:active {
+  color: #141414;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
