@@ -24,7 +24,8 @@ import {
   GradientBtn,
   Ocassion,
   OcassionDesktop,
-  Overlay
+  Overlay,
+  OverlayStepTwo
 } from '../../components';
 import styles from './LandingPage.module.scss';
 
@@ -404,6 +405,7 @@ const LandingPage = () => {
         </section>
       </main>
       <Overlay />
+      <OverlayStepTwo />
     </div>
   );
 };

@@ -9,10 +9,7 @@ import Ocassion from './Ocassion/Ocassion';
 import Ocassion_boxes from './Ocassion/Ocassion_boxes/Ocassion_boxes';
 import OcassionDesktop from './Ocassion/OcassionDesktop';
 import Overlay from './Overlay/Overlay';
-// import AdvanceCarousel from "./ProjectCard/AdvanceCarousel";
-//Buttons
-
-//Footer
+import OverlayStepTwo from './Overlay/OverlayStepTwo/OverlayStepTwo';
 
 export {
   AdvanceCard,
@@ -24,5 +21,6 @@ export {
   Ocassion_boxes,
   OcassionDesktop,
   Overlay,
-  ProjectCard
+  ProjectCard,
+  OverlayStepTwo
 };
