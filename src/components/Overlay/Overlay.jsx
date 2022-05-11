@@ -1,8 +1,8 @@
 import React from 'react';
-import Grid from './Grid/Grid';
-import styles from './Overlay.module.scss';
-import GridData from './GridData';
 import GradientBtn from 'components/Buttons/GradientButton/GradientBtn';
+import Grid from './Grid/Grid';
+import GridData from './GridData';
+import styles from './Overlay.module.scss';
 
 export default function Overlay() {
   const data = GridData.map((i) => {
@@ -21,9 +21,9 @@ export default function Overlay() {
           <div className={styles.body_bar}></div>
           <div className={styles.body_grid}>{data}</div>
         </div>
-      </div>
-      <div className={styles.btn_wrap}>
-        <GradientBtn text='Next' />
+        <div className={styles.btn_wrap} onClick={() => console.log('hi')}>
+          <GradientBtn text='Next' />
+        </div>
       </div>
     </div>
   );
