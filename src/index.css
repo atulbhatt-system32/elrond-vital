@@ -107,6 +107,9 @@ button {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
 }
+.vital_modal {
+  border-radius: 20px;
+}
 @media only screen and (min-width: 768px) {
   .nav_mobile {
     display: none;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import { Modal } from 'react-responsive-modal';
 import {
   hero_text,
   how_1_mobile,
@@ -24,10 +25,8 @@ import {
   GradientBtn,
   Ocassion,
   OcassionDesktop,
-  Overlay,
-  OverlayStepTwo
+  Overlay
 } from '../../components';
-import { Modal } from 'react-responsive-modal';
 import styles from './LandingPage.module.scss';
 
 const LandingPage = () => {
@@ -415,7 +414,12 @@ const LandingPage = () => {
       </main>
       {/* <Overlay />
       <OverlayStepTwo /> */}
-      <Modal open={openModal} onClose={onCloseModal} center>
+      <Modal
+        classNames={{ root: 'modal_root', modal: 'vital_modal' }}
+        open={openModal}
+        onClose={onCloseModal}
+        center
+      >
         <Overlay />
       </Modal>
     </div>

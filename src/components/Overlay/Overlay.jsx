@@ -4,10 +4,6 @@ import Grid from './Grid/Grid';
 import GridData from './GridData';
 import styles from './Overlay.module.scss';
 
-const closeOverlay = () => {
-  const overlay = document.querySelector('.overlay_bg');
-  overlay.classList.add('hidden');
-};
 export default function Overlay() {
   const data = GridData.map((i) => {
     return <Grid key={i.key} category={i.category} items={i.items} />;
