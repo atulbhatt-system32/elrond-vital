@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './ProjectSettings.module.scss';
 import { content_actions, worker } from 'assets/img';
+import styles from './ProjectSettings.module.scss';
 
 export default function ProjectSettings() {
   return (
