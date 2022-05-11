@@ -1,6 +1,7 @@
 import about_us_bg_pc from './about_us_bg_pc.svg';
 import cake from './cake.svg';
 import donation from './donation.svg';
+import grayBox from './grayBox.svg';
 import heart from './heart.svg';
 import hero_text from './hero_text.svg';
 import home_hero_bg from './home_hero_bg.svg';
@@ -25,7 +26,6 @@ import step_2_base from './step_2_base.svg';
 import step_3_base from './step_3_base.svg';
 import step_4_base from './step_4_base.svg';
 import worker from './worker.svg';
-import grayBox from './grayBox.svg';
 
 export {
   logo,

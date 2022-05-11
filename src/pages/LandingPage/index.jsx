@@ -28,6 +28,9 @@ import {
 } from '../../components';
 import styles from './LandingPage.module.scss';
 
+const overlayFunction = (event) => {
+  console.log('overlayFunction', event);
+};
 const LandingPage = () => {
   return (
     <div className='home'>
@@ -44,7 +47,13 @@ const LandingPage = () => {
                   Create, share, participate securely in a transparent and
                   automated way
                 </span>
-                <GradientBtn text='Create' />
+                <div onClick={() => console.log('hello')}>Hello</div>
+                <GradientBtn
+                  text='Create'
+                  clickAction={() => {
+                    overlayFunction;
+                  }}
+                />
               </BasicCard>
             </div>
           </div>

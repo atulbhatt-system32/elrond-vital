@@ -1,10 +1,16 @@
 import React from 'react';
 import styles from './GradientBtn.module.scss';
 const GradientBtn = (props) => {
-  console.log(props, 'prop');
+  const { text, clickAction } = props;
   return (
-    <button type='button' className={styles.gradient_btn}>
-      <span className='gradient_btn-text'>{props.text}</span>
+    <button
+      type='button'
+      className={styles.gradient_btn}
+      onClick={(e) => {
+        clickAction(e);
+      }}
+    >
+      <span className='gradient_btn-text'>{text}</span>
     </button>
   );
 };
