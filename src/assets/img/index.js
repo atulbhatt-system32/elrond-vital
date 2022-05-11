@@ -1,5 +1,6 @@
 import about_us_bg_pc from './about_us_bg_pc.svg';
 import cake from './cake.svg';
+import content_actions from './content_actions.svg';
 import donation from './donation.svg';
 import grayBox from './grayBox.svg';
 import heart from './heart.svg';
@@ -35,6 +36,7 @@ export {
   how_1_mobile,
   how_2_mobile,
   how_3_mobile,
+  content_actions,
   step1_notebook,
   about_us_bg_pc,
   step2_share,

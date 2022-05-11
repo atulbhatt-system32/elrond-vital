@@ -10,67 +10,66 @@
   position: absolute;
   top: 5%;
   left: 25%;
-
-  &_wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 1.5rem 0 1.5rem;
-    height: 100%;
-    width: 100%;
+}
+.overlay_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 1.5rem 0 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+.overlay_head {
+  // border: 1px solid black;
+  span {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 14px;
+    color: #454545;
+    text-align: justify;
   }
-  .overlay_head {
-    // border: 1px solid black;
-    span {
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 14px;
-      color: #454545;
-      text-align: justify;
-    }
-  }
-  .overlay_body {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .body_bar {
-    border: 2px solid cyan;
+}
+.overlay_body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.body_bar {
+  border: 2px solid cyan;
+  border-radius: 100px;
+  padding: 8px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &::before {
+    content: '';
+    background-color: red;
+    background: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
     border-radius: 100px;
-    padding: 8px 0;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    &::before {
-      content: '';
-      background-color: red;
-      background: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
-      border-radius: 100px;
-      padding: 8px 25px;
-      position: absolute;
-      width: 30%;
-      left: 0;
-      height: 100%;
-    }
+    padding: 8px 25px;
+    position: absolute;
+    width: 30%;
+    left: 0;
+    height: 100%;
   }
-  .body_grid {
-    display: flex;
-    flex-direction: column;
-    // background-color: yellow;
-    gap: 20px;
+}
+.body_grid {
+  display: flex;
+  flex-direction: column;
+  // background-color: yellow;
+  gap: 20px;
+}
+.btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    width: 12%;
+    padding: 0.4rem 1rem;
   }
-  .btn_wrap {
-    display: flex;
-    justify-content: flex-end;
-    button {
-      width: 12%;
-      padding: 0.4rem 1rem;
-    }
-  }
-  .close_btn {
-    display: flex;
-    justify-content: flex-end;
-  }
+}
+.close_btn {
+  display: flex;
+  justify-content: flex-end;
 }
