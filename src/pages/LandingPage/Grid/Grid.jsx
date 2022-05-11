@@ -1,5 +1,5 @@
 import React from 'react';
-import OverlayCard from '../OverlayCard/OverlayCard';
+import OverlayCard from '../../../components/Overlay/OverlayCard/OverlayCard';
 import styles from './Grid.module.scss';
 
 export default function Grid(props) {

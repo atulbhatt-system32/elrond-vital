@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Modal } from 'react-responsive-modal';
+import GridData from 'assets/js/GridData';
 import {
   hero_text,
   how_1_mobile,
@@ -27,6 +28,7 @@ import {
   OcassionDesktop,
   Overlay
 } from '../../components';
+import Grid from './Grid/Grid';
 import styles from './LandingPage.module.scss';
 
 const LandingPage = () => {
@@ -38,6 +40,9 @@ const LandingPage = () => {
   const onOpenModal = () => setOpenModal(true);
   const onCloseModal = () => setOpenModal(false);
 
+  const data = GridData.map((i) => {
+    return <Grid key={i.key} category={i.category} items={i.items} />;
+  });
   return (
     <div className='home'>
       <main>
@@ -420,7 +425,12 @@ const LandingPage = () => {
         onClose={onCloseModal}
         center
       >
-        <Overlay />
+        <Overlay>
+          <div className={styles.body_bar}></div>
+          <div className={styles.body_grid}>{data}</div>
+        </Overlay>
+
+        <div className={styles.modal_content}></div>
       </Modal>
     </div>
   );
