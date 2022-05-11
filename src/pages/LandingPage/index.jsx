@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import {
@@ -27,12 +27,18 @@ import {
   Overlay,
   OverlayStepTwo
 } from '../../components';
+import { Modal } from 'react-responsive-modal';
 import styles from './LandingPage.module.scss';
 
-const overlayFunction = (event) => {
-  console.log('overlayFunction', event);
-};
 const LandingPage = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const btnClick = (event) => {
+    onOpenModal();
+  };
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
+
   return (
     <div className='home'>
       <main>
@@ -48,13 +54,7 @@ const LandingPage = () => {
                   Create, share, participate securely in a transparent and
                   automated way
                 </span>
-                <div onClick={() => console.log('hello')}>Hello</div>
-                <GradientBtn
-                  text='Create'
-                  clickAction={() => {
-                    overlayFunction;
-                  }}
-                />
+                <GradientBtn text='Create' clickAction={btnClick} />
               </BasicCard>
             </div>
           </div>
@@ -73,7 +73,7 @@ const LandingPage = () => {
                     automated way{' '}
                   </span>{' '}
                   <div className={styles.gradient_btn_wrapper}>
-                    <GradientBtn text='Create' />
+                    <GradientBtn text='Create' clickAction={btnClick} />
                   </div>
                 </BasicCard>
               </div>
@@ -413,8 +413,11 @@ const LandingPage = () => {
           <OcassionDesktop />
         </section>
       </main>
-      <Overlay />
-      <OverlayStepTwo />
+      {/* <Overlay />
+      <OverlayStepTwo /> */}
+      <Modal open={openModal} onClose={onCloseModal} center>
+        <Overlay />
+      </Modal>
     </div>
   );
 };

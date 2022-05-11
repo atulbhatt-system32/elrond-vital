@@ -49,4 +49,6 @@
 }
 .step_two .step_two_wrap .dual_btn_wrap button {
   width: 50%;
+  display: inline-block;
+  background-color: blue;
 }/*# sourceMappingURL=OverlayStepTwo.module.css.map */

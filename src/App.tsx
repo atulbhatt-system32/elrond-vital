@@ -5,7 +5,7 @@ import Layout from 'components/Layout';
 import PageNotFound from 'pages/PageNotFound';
 import { routeNames } from 'routes';
 import routes from 'routes';
-
+import 'react-responsive-modal/styles.css';
 import '@elrondnetwork/dapp-core/build/index.css';
 
 const environment = 'devnet';

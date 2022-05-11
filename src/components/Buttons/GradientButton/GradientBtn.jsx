@@ -7,7 +7,7 @@ const GradientBtn = (props) => {
       type='button'
       className={styles.gradient_btn}
       onClick={(e) => {
-        clickAction(e);
+        if (clickAction) clickAction(e);
       }}
     >
       <span className='gradient_btn-text'>{text}</span>

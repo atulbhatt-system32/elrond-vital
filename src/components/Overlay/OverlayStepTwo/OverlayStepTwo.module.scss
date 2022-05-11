@@ -50,6 +50,8 @@
       display: flex;
       button {
         width: 50%;
+        display: inline-block;
+        background-color: blue;
       }
     }
   }
