@@ -11,7 +11,7 @@ export default function Overlay(props) {
       </div>
       <div className={styles.overlay_body}>{props.children}</div>
       <div className={styles.btn_wrap} onClick={() => console.log('hi')}>
-        <GradientBtn text='Next' />
+        <GradientBtn text='Validate' />
       </div>
     </div>
   );

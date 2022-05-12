@@ -34,6 +34,7 @@
   }
   .right_side {
     width: 80%;
+    min-height: 70vh;
     padding: 1rem;
     border-left: none;
 
@@ -59,6 +60,9 @@
           font-size: 0.8rem;
           font-family: inherit;
           color: #959595;
+        }
+        input[type='date'] {
+          max-width: fit-content;
         }
 
         .choose_btn {
@@ -88,6 +92,21 @@
             max-width: 100%;
             border-radius: 20px;
           }
+        }
+      }
+      .field_input.number_input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e5e5e5;
+        border-radius: 1.2rem;
+        padding: 0.5rem 1rem;
+        .currency {
+          margin-right: 0.5rem;
+        }
+        input {
+          outline: none;
+          border: 0;
+          padding: 0;
         }
       }
     }
